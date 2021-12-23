@@ -4,14 +4,16 @@ import GlobalStyles from './styles/global'
 import { Main } from './components/main'
 
 function App() {
+
   return (
+    
     <div className='wrapper'>
-      <GlobalStyles/>
+      <GlobalStyles />
       <Header></Header>
       <Main></Main>
       <Footer></Footer>
     </div>
-  )
+  );
 }
 
 export default App

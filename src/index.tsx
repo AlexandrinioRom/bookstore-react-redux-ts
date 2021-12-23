@@ -1,13 +1,20 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { Registration } from './pages/registration'
+import { Login } from './pages/login'
 import { Provider } from 'react-redux'
 import ReactDOM from 'react-dom'
 import { store } from './store'
-import React from 'react'
 import App from './App'
 
 ReactDOM.render(
   <Provider store = {store}>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
+      </Routes>
+    </Router>
   </Provider>,
   document.getElementById('root')
 );
-
