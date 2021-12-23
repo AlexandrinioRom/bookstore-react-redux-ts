@@ -8,8 +8,10 @@ type Props = {
 export const Main: React.FC<Props> = (props) => {
  return (
   <Wrapper>
-     <LeftContainer></LeftContainer>
-     <RightContainer></RightContainer>
+    <LeftContainer></LeftContainer>
+    <RightContainer>
+      
+    </RightContainer>
    </Wrapper>
  );
 }

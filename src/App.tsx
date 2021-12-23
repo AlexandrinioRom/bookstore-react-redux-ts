@@ -1,18 +1,19 @@
-import { Footer } from './components/footer'
-import { Header } from './components/header'
-import GlobalStyles from './styles/global'
-import { Main } from './components/main'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { Registration } from './pages/registration'
+import { Login } from './pages/login'
+import Home from "./pages/home"
+
 
 function App() {
 
   return (
-    
-    <div className='wrapper'>
-      <GlobalStyles />
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
+      </Routes>
+    </Router>
   );
 }
 

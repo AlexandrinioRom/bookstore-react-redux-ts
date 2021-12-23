@@ -9,12 +9,9 @@ export default createGlobalStyle`
     font-family: 'Open Sans', sans-serif; 
   }
   
-  #root{
-    margin: 0 auto;
-  }
-  .wrapper {
+  .wrapper{
     display: flex;
     flex-direction: column;
-    height: 100vh;
   }
+
 `
