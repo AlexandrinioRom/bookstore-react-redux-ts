@@ -1,4 +1,4 @@
-import {Container} from './styles'
+import { LeftContainer, RightContainer, Wrapper} from './styles'
 import React from 'react'
 
 type Props = {
@@ -7,7 +7,10 @@ type Props = {
 
 export const Main: React.FC<Props> = (props) => {
  return (
-   <Container>Main</Container>
+  <Wrapper>
+     <LeftContainer></LeftContainer>
+     <RightContainer></RightContainer>
+   </Wrapper>
  );
 }
 

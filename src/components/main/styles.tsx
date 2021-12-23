@@ -1,9 +1,17 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #6e7781;
+  flex: 1 0 auto;
+  background-color: #6a7f97;
   color: white;
+`
+export const LeftContainer = styled.div`
+  height: 100%;
+  width: 12vw;
+  border-right: 1px solid black;
+`
+export const RightContainer = styled.div`
+  height: 100%;
+  width: 88vw;
 `

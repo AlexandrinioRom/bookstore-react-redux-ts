@@ -12,4 +12,9 @@ export default createGlobalStyle`
   #root{
     margin: 0 auto;
   }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 `
