@@ -6,12 +6,17 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 18px;
   }
   
   .wrapper{
     display: flex;
     flex-direction: column;
+  }
+
+  a{
+    text-decoration: none;
   }
 
 `
